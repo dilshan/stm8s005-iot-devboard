@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name sensor-dev-kit)(type Legacy)(uri ${KIPRJMOD}/sensor-dev-kit.lib)(options "")(descr ""))
+  (lib (name sensor-dev-kit-rescue)(type Legacy)(uri ${KIPRJMOD}/sensor-dev-kit-rescue.lib)(options "")(descr ""))
+)

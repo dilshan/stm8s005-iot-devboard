@@ -1,0 +1,19 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CH340G
+D USB to UART interface
+K usb, uart
+$ENDCMP
+#
+$CMP HR911105A
+D Ethernet Connectors/Modular Connectors (RJ45 RJ11) DIP RoHS
+F https://datasheet.lcsc.com/szlcsc/Zhongshan-HanRun-Elec-HR911105A_C12074.pdf
+$ENDCMP
+#
+$CMP STM8S005C6
+D STM8 - Value line - 16 MHz STM8S 8-bit MCU with 32-Kbyte Flash memory
+K stm8
+F https://www.st.com/en/microcontrollers-microprocessors/stm8s005c6.html
+$ENDCMP
+#
+#End Doc Library

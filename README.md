@@ -8,7 +8,7 @@ The firmware framework for this development board has been developed using [SDCC
 
 In the given design, the SPI terminals of the MCU are connected to the ENC28J60 Ethernet controller. All SPI terminals, such as *MISO* / *PC7*, *MOSI* / *PC6*, and *SCK* / *PC5*, are connected directly to the Ethernet controller. In addition, the *PC4* terminal of the MCU is used as ENC28J60, *CHIP-SELECT*. 
 
-The CH340G USB serial interface is connected to the UART2 terminals of the MCU. In STM8S005C6T6, the UART2 is mapped to the *PD6* and *PD5* terminals of the MCU. The USB interface of this development board consists of the jack-sense feature. The jack-sense status can access from *PD7*.
+The CH340G USB serial interface is connected to the *UART2* terminals of the MCU. In STM8S005C6T6, the *UART2* is mapped to the *PD6* and *PD5* terminals of the MCU. The USB interface of this development board consists of the jack-sense feature. The jack-sense status can access from *PD7*.
 
 The minor peripherals such as LED indicators and buzzer are connected to the *PORTD* of the MCU. The LED indicators are connected to terminals *PD0* and *PD1* and can be activated or deactivated via jumpers. The passive buzzer is connected to *PD4* and can run through the STM8 beep sound generator unit.
 

@@ -53,31 +53,31 @@ void enc28j60InitSPI()
 {
     SPI_CR1 = 0;
     SPI_CR2 = 0;
-	
-	// Initialize CS as output with logic high.
+
+    // Initialize CS as output with logic high.
     PC_DDR |= (1 << ENC28J60_CS_PIN);
     PC_CR1 |= (1 << ENC28J60_CS_PIN);
-	PC_CR2 |= (1 << ENC28J60_CS_PIN);
+    PC_CR2 |= (1 << ENC28J60_CS_PIN);
     PC_ODR |= (1 << ENC28J60_CS_PIN);
 
-	// Initialize MOSI as output with logic high.
-	PC_DDR |= (1 << ENC28J60_MOSI_PIN);
-	PC_CR1 |= (1 << ENC28J60_MOSI_PIN);
-	PC_CR2 |= (1 << ENC28J60_MOSI_PIN);
+    // Initialize MOSI as output with logic high.
+    PC_DDR |= (1 << ENC28J60_MOSI_PIN);
+    PC_CR1 |= (1 << ENC28J60_MOSI_PIN);
+    PC_CR2 |= (1 << ENC28J60_MOSI_PIN);
 
-	// Initialize MISO as input with pullup.
-	PC_DDR &= ~(1 << ENC28J60_MISO_PIN);
-	PC_CR1 |= (1 << ENC28J60_MISO_PIN);
-	PC_CR2 &= ~(1 << ENC28J60_MISO_PIN);
+    // Initialize MISO as input with pullup.
+    PC_DDR &= ~(1 << ENC28J60_MISO_PIN);
+    PC_CR1 |= (1 << ENC28J60_MISO_PIN);
+    PC_CR2 &= ~(1 << ENC28J60_MISO_PIN);
 
-	// Initialize SCK as output with logic high.
-	PC_DDR |= (1 << ENC28J60_SCK_PIN);
-	PC_CR1 |= (1 << ENC28J60_SCK_PIN);
-	PC_CR2 |= (1 << ENC28J60_SCK_PIN);
+    // Initialize SCK as output with logic high.
+    PC_DDR |= (1 << ENC28J60_SCK_PIN);
+    PC_CR1 |= (1 << ENC28J60_SCK_PIN);
+    PC_CR2 |= (1 << ENC28J60_SCK_PIN);
 
-	// Initialize SPI interface in master mode.
-	SPI_CR2 = SPI_CR2_SSM | SPI_CR2_SSI;
-	SPI_CR1 = SPI_CR1_MSTR | SPI_CR1_SPE;
+    // Initialize SPI interface in master mode.
+    SPI_CR2 = SPI_CR2_SSM | SPI_CR2_SSI;
+    SPI_CR1 = SPI_CR1_MSTR | SPI_CR1_SPE;
 }
 
 unsigned char spiTransfer(unsigned char data) 

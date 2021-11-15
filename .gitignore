@@ -1,0 +1,9 @@
+firmware/.vscode/settings.json
+*.lnk
+*.lst
+*.map
+*.mem
+*.rel
+*.rst
+*.sym
+*.ihx
